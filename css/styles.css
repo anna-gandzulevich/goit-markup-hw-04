@@ -327,15 +327,16 @@ header .logo-part {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 16px; */
   gap: 24px;
 }
 
 .team-social-media-link:hover,
 .team-social-media-link:focus {
   background-color: #404bbf;
+  fill: #f4f4fd;
 }
 
 .team-social-media-link {
@@ -383,11 +384,10 @@ header .logo-part {
 
 .portfolio-photo {
   display: block;
-  /* position: relative; */
 }
 .portfolio-marketing-overley {
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(200%);
   top: 0;
   left: 0;
 }
@@ -401,11 +401,17 @@ header .logo-part {
   background-color: #4d5ae5;
   width: 100%;
   height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 164px;
 }
 
-.portfolio-marketing-overley-link:hover .portfolio-marketing-overley,
-.portfolio-marketing-overley-link:focus .portfolio-marketing-overley {
+.portfolio-item:hover .portfolio-marketing-overley,
+.portfolio-item:focus .portfolio-marketing-overley {
   transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-photo-name {
